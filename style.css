@@ -34,3 +34,27 @@ h3 {
   flex-direction: column;
   overflow: hidden;
 }
+.cup.cup-small {
+  width: 50px;
+  height: 95px;
+  border-radius: 0 0 15px 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px;
+  transition: 0.3s ease;
+}
+.cup.cup.cup-small.full {
+  background-color: var(--full-color);
+  column-rule: #eee;
+}
+.cups {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 280px;
+}
