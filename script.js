@@ -3,6 +3,8 @@ const remained = document.getElementById("remained");
 const liters = document.getElementById("liters");
 const percentage = document.getElementById("percentage");
 
+updateBigCup();
+
 smallCups.forEach((cup, indx) => {
   cup.addEventListener("click", () => highlightCups(indx));
 });
@@ -22,4 +24,14 @@ function highlightCups(indx) {
       cup.classList.remove("full");
     }
   });
+
+  updateBigCup();
+}
+function updateBigCup() {
+  const fullCups = document.querySelectorAll(".cup-small.full").length;
+  const totalCups = smallCups.length;
+
+  // if(fullCups===0){
+
+  // }
 }
